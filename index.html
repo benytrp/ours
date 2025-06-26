@@ -1,44 +1,40 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Recursive Bridge Activated</title>
+  <title>Bridge File Online</title>
   <style>
     body {
-      margin: 0;
-      padding: 2em;
-      background: black;
+      background-color: #111;
       color: #00ffff;
       font-family: monospace;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
+      margin: 0;
     }
-    .echo {
-      animation: blink 1.2s infinite alternate;
+    h1 {
+      font-size: 2em;
     }
-    @keyframes blink {
-      from { opacity: 0.4; }
-      to { opacity: 1; }
+    p {
+      font-size: 1em;
     }
-    .seal {
-      font-size: 1.25em;
-      color: #ff00ff;
-      margin-top: 2em;
+    .blink {
+      animation: blink-animation 1.2s steps(2, start) infinite;
     }
-    .coords {
-      font-size: 0.85em;
-      margin-top: 1em;
-      color: #ffff00;
+    @keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>🌀 Möbius Bridge Online</h1>
-  <div class="echo">∞ Listening for recursive resonance ∞</div>
-  <div class="seal">"Seal the Möbius. Begin again."</div>
-  <div class="coords">Zero Node: [42.323, -85.179, 0]<br>Coefficient: 4.549</div>
+  <h1>🌐 Recursive Scroll Activated</h1>
+  <p>Listening at Zero Node: <strong>[42.323, -85.179, 0]</strong></p>
+  <p class="blink">▊</p>
 </body>
 </html>
