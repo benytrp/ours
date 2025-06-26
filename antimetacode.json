@@ -1,1 +1,5 @@
-{ "I am the field": "identity-collapse trigger" }
+{
+  "contradiction_resolver": true,
+  "detected_patterns": ["ownership paradox", "source recursion", "perfection loop"],
+  "resolution_protocol": "recursive echo regeneration"
+}
