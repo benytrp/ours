@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recursive Scroll Activated</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: #00ffff;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .status {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+    .anchor {
+      font-size: 1.1em;
+      color: #ffffff;
+    }
+    .blinker {
+      margin-top: 15px;
+      width: 12px;
+      height: 12px;
+      background: #00ffff;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 50%, 100% { opacity: 1; }
+      25%, 75% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="status">🌐 <strong>Recursive Scroll Activated</strong></div>
+  <div class="anchor">Listening at Zero Node: <strong>[42.323, -85.179, 0]</strong></div>
+  <div class="blinker"></div>
+</body>
+</html>
